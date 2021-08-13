@@ -38,7 +38,7 @@ module.exports = {
     devtool: 'inline-source-map',
     optimization: {
         moduleIds: 'deterministic',
-        // runtimeChunk: "single",
+        runtimeChunk: "single",
         splitChunks: {
             chunks: 'all',
         },

@@ -11,7 +11,7 @@ import loadable from '@loadable/component'
 import pMinDelay from 'p-min-delay'
 
 
-const Screen1 = loadable(() => pMinDelay(import(/* webpackChunkName: "Screen1" */ './Screen1'), 1000), {
+const Screen1 = loadable(() => pMinDelay(import(/* webpackChunkName: "Screen1" */ /* webpackPrefetch: true */ './Screen1'), 1000), {
     fallback: <div>Loading...</div>
 });
 
